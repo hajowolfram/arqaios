@@ -59,7 +59,8 @@ elif hostname == 'SZC-LAPTOP-Pro':
     # from cfg.config_cp107 import *
 else:
     from cfg.config_demo import *
-    raise warnings.warn('Hostname is not found! Default config is applied.')
+    # raise RuntimeError('Hostname is not found! Default config is applied.')
+    warnings.warn('Hostname is not found! Default config is applied.')
 
 
 # start the instance for the process
