@@ -50,13 +50,13 @@ except:
 
 # import module configs
 hostname = socket.gethostname()
-if hostname == 'IT077979RTX2080':
-    from cfg.config_queens059 import *
-elif hostname == 'IT080027':
+if hostname == 'IT080027':
     from cfg.config_demo import *
 elif hostname == 'SZC-LAPTOP-Pro':
     from cfg.config_demo import *
     # from cfg.config_cp107 import *
+elif hostname == 'host-laptop-name':
+    from cfg.arqaios_config import *
 else:
     from cfg.config_demo import *
     # raise RuntimeError('Hostname is not found! Default config is applied.')
